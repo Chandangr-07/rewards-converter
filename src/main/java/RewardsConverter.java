@@ -1,3 +1,4 @@
+// RewardsConverter.java
 import java.util.Scanner;
 
 public class RewardsConverter {
@@ -13,8 +14,8 @@ public class RewardsConverter {
             System.out.println("Could not parse input value as a double, exiting");
             return;
         }
-        System.out.println("converting $" + input_value + " to miles");
+        System.out.println("Converting $" + cashValue + " to miles");
         var rewardsValue = new RewardValue(cashValue);
-        System.out.println("$" + input_value + " is worth " + rewardsValue.getMilesValue() + " miles");
+        System.out.println("$" + cashValue + " is worth " + rewardsValue.getMilesValue() + " miles");
     }
 }
